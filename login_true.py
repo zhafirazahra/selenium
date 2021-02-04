@@ -9,11 +9,7 @@ passed = 0
 failed = 0
 timeout = 25
 
-from selenium.webdriver.chrome.options import Options
-
-chrome_options = Options()
-chrome_options.add_argument('--headless')
-driver = webdriver.Chrome(options=chrome_options)
+driver = webdriver.Chrome('chromedriver.exe')
 driver.maximize_window()
 driver.get('https://pwa.assemblrworld.com/Auth/Login')
 
